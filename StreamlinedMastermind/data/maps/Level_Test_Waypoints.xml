@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<testCharacter>
+  <Waypoint0 X="-8.500000" Y="-0.250000" />
+  <Waypoint1 X="-0.500000" Y="3.750000" />
+  <Waypoint2 X="9.500000" Y="-1.250000" />
+  <Waypoint3 X="1.500000" Y="-5.250000" />
+</testCharacter>

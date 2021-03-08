@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|NX64">
+      <Configuration>Debug</Configuration>
+      <Platform>NX64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|NX64">
+      <Configuration>Release</Configuration>
+      <Platform>NX64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{8DD41FB4-BFA6-4B4F-AC39-2DD90063C915}</ProjectGuid>
+    <RootNamespace>StreamlinedMastermind</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'">
+    <PlatformToolset />
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Debug</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|NX64'">
+    <PlatformToolset />
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Release</NintendoSdkBuildType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="propertysheets\SM_Platform_All.props" />
+    <Import Project="propertysheets\SM_Platform_Windows.props" />
+    <Import Project="propertysheets\SM_Debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="propertysheets\SM_Platform_All.props" />
+    <Import Project="propertysheets\SM_Platform_Windows.props" />
+    <Import Project="propertysheets\SM_Release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'">
+    <Import Project="ImportNintendoSdk.props" />
+    <Import Project="propertysheets\SM_Platform_All.props" />
+    <Import Project="propertysheets\SM_Platform_Switch.props" />
+    <Import Project="propertysheets\SM_Debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|NX64'">
+    <Import Project="ImportNintendoSdk.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessToFile>false</PreprocessToFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>tmxlite-s-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>USE_OPTICK=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>OptickCore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'">
+    <Link />
+    <Link>
+      <AdditionalDependencies>libtmxlite-s-d.a;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Gameplay\CameraController.h" />
+    <ClInclude Include="include\Gameplay\GameTileObjectFactory.h" />
+    <ClInclude Include="include\Gameplay\PlayerController.h" />
+    <ClInclude Include="include\Gameplay\Scenes\HubScene.h" />
+    <ClInclude Include="include\BehaviorTree\Action.h" />
+    <ClInclude Include="include\Events\CharacterEvent.h" />
+    <ClInclude Include="include\Events\CharacterEventSystem.h" />
+    <ClInclude Include="include\Events\Move.h" />
+    <ClInclude Include="include\Gameplay\Character.h" />
+    <ClInclude Include="include\BehaviorTree\Behavior.h" />
+    <ClInclude Include="include\BehaviorTree\BehaviorTree.h" />
+    <ClInclude Include="include\BehaviorTree\BehaviorTreeTestObject.h" />
+    <ClInclude Include="include\BehaviorTree\Composite.h" />
+    <ClInclude Include="include\BehaviorTree\Condition.h" />
+    <ClInclude Include="include\BehaviorTree\Decorator.h" />
+    <ClInclude Include="include\BehaviorTree\IBehavior.h" />
+    <ClInclude Include="include\BehaviorTree\Repeater.h" />
+    <ClInclude Include="include\BehaviorTree\Selector.h" />
+    <ClInclude Include="include\BehaviorTree\Sequence.h" />
+    <ClInclude Include="include\BehaviorTree\Wait.h" />
+    <ClInclude Include="include\Game.h" />
+    <ClInclude Include="include\Gameplay\Guard.h" />
+    <ClInclude Include="include\Gameplay\Stash.h" />
+    <ClInclude Include="include\Gameplay\Unit.h" />
+    <ClInclude Include="include\Items\Item.h" />
+    <ClInclude Include="include\Items\MoneyPack.h" />
+    <ClInclude Include="include\Pathfinding\Algorithms.h" />
+    <ClInclude Include="include\Pathfinding\Graph.h" />
+    <ClInclude Include="include\Pathfinding\Heuristics.h" />
+    <ClInclude Include="include\Pathfinding\TileNode.h" />
+    <ClInclude Include="include\smpch.h" />
+    <ClInclude Include="include\Tools\WaypointTool.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Tools\ToolLayer.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="include\Utils\Enums.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Gameplay\CameraController.cpp" />
+    <ClCompile Include="source\Gameplay\GameTileObjectFactory.cpp" />
+    <ClCompile Include="source\Gameplay\Scenes\HubScene.cpp" />
+    <ClCompile Include="source\BehaviorTree\Action.cpp" />
+    <ClCompile Include="source\Events\CharacterEvent.cpp" />
+    <ClCompile Include="source\Events\CharacterEventSystem.cpp" />
+    <ClCompile Include="source\Events\Move.cpp" />
+    <ClCompile Include="source\Gameplay\Character.cpp" />
+    <ClCompile Include="source\BehaviorTree\Behavior.cpp" />
+    <ClCompile Include="source\BehaviorTree\BehaviorTree.cpp" />
+    <ClCompile Include="source\BehaviorTree\BehaviorTreeTestObject.cpp" />
+    <ClCompile Include="source\BehaviorTree\Composite.cpp" />
+    <ClCompile Include="source\BehaviorTree\Condition.cpp" />
+    <ClCompile Include="source\BehaviorTree\Decorator.cpp" />
+    <ClCompile Include="source\BehaviorTree\Repeater.cpp" />
+    <ClCompile Include="source\BehaviorTree\Selector.cpp" />
+    <ClCompile Include="source\BehaviorTree\Sequence.cpp" />
+    <ClCompile Include="source\BehaviorTree\Wait.cpp" />
+    <ClCompile Include="source\Game.cpp" />
+    <ClCompile Include="source\Gameplay\Guard.cpp" />
+    <ClCompile Include="source\Gameplay\Stash.cpp" />
+    <ClCompile Include="source\Gameplay\Unit.cpp" />
+    <ClCompile Include="source\Items\Item.cpp" />
+    <ClCompile Include="source\Items\MoneyPack.cpp" />
+    <ClCompile Include="source\Pathfinding\Algorithms.cpp" />
+    <ClCompile Include="source\Pathfinding\Graph.cpp" />
+    <ClCompile Include="source\Pathfinding\Heuristics.cpp" />
+    <ClCompile Include="source\Pathfinding\TileNode.cpp" />
+    <ClCompile Include="source\Gameplay\PlayerController.cpp" />
+    <ClCompile Include="source\smpch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'">../include/smpch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="source\Tools\ToolLayer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\Tools\WaypointTool.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CrimeEngine\CrimeEngine.vcxproj">
+      <Project>{43a0df3e-1ba6-4b79-b580-0654258e0a00}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

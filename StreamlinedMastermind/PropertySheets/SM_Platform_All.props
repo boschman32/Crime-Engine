@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>build\$(Platform)\$(Configuration)\bin\</OutDir>
+    <IntDir>build\$(Platform)\$(Configuration)\intermediate\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)include\;$(SolutionDir)CrimeEngine\include\;$(SolutionDir)CrimeEngine\libs\;$(SolutionDir)CrimeEngine\libs\FMOD\inc;$(SolutionDir)CrimeEngine\libs\tmxlite\include;$(SolutionDir)CrimeEngine\libs\glm;$(SolutionDir)CrimeEngine\libs\spdlog\include;$(SolutionDir)CrimeEngine\libs\sol2\include;$(SolutionDir)CrimeEngine\libs\lua-5.3.5\include;$(SolutionDir)CrimeEngine\libs\eventpp\include;$(SolutionDir)CrimeEngine\libs\Optick\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>smpch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)CrimeEngine\libs\CrimeEngine\$(Platform)\$(Configuration)\;$(SolutionDir)CrimeEngine\libs\tmxlite\lib\$(Platform)\$(Configuration)\;$(SolutionDir)CrimeEngine\libs\FMOD\lib;$(SolutionDir)CrimeEngine\libs\spdlog\lib;$(SolutionDir)CrimeEngine\libs\lua-5.3.5\lib\$(Platform)\;$(SolutionDir)CrimeEngine\libs\Optick\lib\x64\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>../CrimeEngine/tools/copyBuildResources.bat $(SolutionDir) CrimeEngine $(OutDir) $(ProjectName) $(Configuration)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

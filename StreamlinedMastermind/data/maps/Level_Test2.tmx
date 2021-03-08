@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.3" orientation="orthogonal" renderorder="left-up" width="30" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="1888">
+ <tileset firstgid="1" source="Tileset_test2.tsx"/>
+ <layer id="1" name="Tiles" width="30" height="30">
+  <data encoding="csv">
+212,216,216,216,216,216,216,216,216,216,216,216,216,220,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,218,
+211,2,2,2,2,2,2,2,2,2,2,2,2,457,2,2,2,457,2,2,2,2,456,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,457,2,2,2,457,2,2,2,2,457,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,457,2,2,2,457,2,2,2,2,457,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,457,2,2,2,457,2,2,2,2,457,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,457,2,2,2,457,2,2,2,2,457,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,457,2,2,2,457,2,2,2,2,457,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,457,2,2,2,457,2,2,2,2,457,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,457,2,2,2,457,2,2,2,2,457,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,215,2,2,457,2,2,2,457,2,2,2,2,457,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,457,2,2,2,457,2,2,2,2,457,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,457,2,2,2,457,2,2,2,2,457,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,457,2,2,2,457,2,2,2,2,457,457,2,2,2,2,2,211,
+213,462,462,462,462,462,462,462,462,462,462,462,462,215,2,2,2,457,2,2,2,2,457,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,457,2,2,2,2,457,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,457,2,2,2,2,457,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,457,2,2,2,2,456,457,2,2,2,2,2,211,
+211,463,463,463,463,463,463,463,463,463,463,463,463,463,463,462,462,215,2,2,2,2,457,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,457,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,457,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,457,457,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,457,457,2,2,2,2,2,211,
+211,462,462,462,462,462,462,462,462,462,462,462,462,462,462,462,462,462,462,462,462,462,215,211,2,2,2,2,2,211,
+211,462,462,462,462,462,462,462,462,462,462,462,462,462,462,462,462,462,462,462,462,462,216,215,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,211,
+211,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,211,
+209,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,216,215
+</data>
+ </layer>
+ <objectgroup id="2" name="Entities">
+  <object id="1809" gid="513" x="288" y="320" width="32" height="32">
+   <properties>
+    <property name="doorID" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="1810" gid="513" x="256" y="320" width="32" height="32">
+   <properties>
+    <property name="doorID" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="1811" gid="513" x="224" y="320" width="32" height="32">
+   <properties>
+    <property name="doorID" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="1812" gid="513" x="192" y="320" width="32" height="32">
+   <properties>
+    <property name="doorID" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="1813" gid="513" x="160" y="320" width="32" height="32">
+   <properties>
+    <property name="doorID" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="1814" gid="513" x="128" y="320" width="32" height="32">
+   <properties>
+    <property name="doorID" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="1815" gid="513" x="64" y="320" width="32" height="32">
+   <properties>
+    <property name="doorID" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="1816" gid="513" x="96" y="320" width="32" height="32">
+   <properties>
+    <property name="doorID" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="1817" gid="513" x="32" y="320" width="32" height="32">
+   <properties>
+    <property name="doorID" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="1818" gid="514" x="320" y="288" width="32" height="32">
+   <properties>
+    <property name="doorID" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="1819" gid="514" x="320" y="256" width="32" height="32">
+   <properties>
+    <property name="doorID" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="1820" gid="514" x="320" y="224" width="32" height="32">
+   <properties>
+    <property name="doorID" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="1821" gid="514" x="320" y="192" width="32" height="32">
+   <properties>
+    <property name="doorID" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="1822" gid="514" x="320" y="160" width="32" height="32">
+   <properties>
+    <property name="doorID" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="1823" gid="514" x="320" y="128" width="32" height="32">
+   <properties>
+    <property name="doorID" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="1824" gid="514" x="320" y="96" width="32" height="32">
+   <properties>
+    <property name="doorID" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="1825" gid="514" x="320" y="64" width="32" height="32">
+   <properties>
+    <property name="doorID" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="1826" gid="18" x="96" y="128" width="32" height="32"/>
+  <object id="1831" gid="553" x="256" y="128" width="32" height="32"/>
+  <object id="1832" gid="558" x="224" y="256" width="32" height="32"/>
+  <object id="1833" gid="559" x="64" y="256" width="32" height="32"/>
+  <object id="1834" gid="560" x="64" y="64" width="32" height="32"/>
+  <object id="1835" gid="560" x="96" y="64" width="32" height="32"/>
+  <object id="1836" gid="560" x="160" y="64" width="32" height="32"/>
+  <object id="1837" gid="560" x="128" y="64" width="32" height="32"/>
+  <object id="1839" gid="510" x="32" y="704" width="32" height="32"/>
+  <object id="1840" gid="510" x="672" y="704" width="32" height="32"/>
+  <object id="1843" gid="510" x="672" y="64" width="32" height="32"/>
+  <object id="1844" gid="469" x="896" y="64" width="32" height="32"/>
+  <object id="1845" gid="469" x="832" y="864" width="32" height="32"/>
+  <object id="1847" gid="469" x="32" y="928" width="32" height="32"/>
+  <object id="1848" gid="428" x="32" y="800" width="32" height="32"/>
+  <object id="1849" gid="428" x="768" y="800" width="32" height="32"/>
+  <object id="1850" gid="428" x="768" y="64" width="32" height="32"/>
+  <object id="1851" gid="553" x="512" y="544" width="32" height="32"/>
+  <object id="1852" gid="553" x="512" y="64" width="32" height="32"/>
+  <object id="1853" gid="553" x="32" y="544" width="32" height="32"/>
+  <object id="1854" gid="553" x="320" y="704" width="32" height="32"/>
+  <object id="1856" gid="553" x="384" y="928" width="32" height="32"/>
+  <object id="1857" gid="553" x="896" y="384" width="32" height="32"/>
+  <object id="1858" gid="553" x="672" y="288" width="32" height="32"/>
+  <object id="1861" gid="560" x="544" y="608" width="32" height="32"/>
+  <object id="1862" gid="560" x="576" y="576" width="32" height="32"/>
+  <object id="1863" gid="560" x="704" y="800" width="32" height="32"/>
+  <object id="1864" gid="560" x="736" y="800" width="32" height="32"/>
+  <object id="1865" gid="560" x="768" y="768" width="32" height="32"/>
+  <object id="1866" gid="560" x="768" y="736" width="32" height="32"/>
+  <object id="1867" gid="560" x="320" y="352" width="32" height="32"/>
+  <object id="1868" gid="560" x="352" y="320" width="32" height="32"/>
+  <object id="1869" gid="560" x="896" y="416" width="32" height="32"/>
+  <object id="1870" gid="560" x="896" y="352" width="32" height="32"/>
+  <object id="1871" gid="560" x="416" y="928" width="32" height="32"/>
+  <object id="1872" gid="560" x="352" y="928" width="32" height="32"/>
+  <object id="1873" gid="560" x="352" y="704" width="32" height="32"/>
+  <object id="1874" gid="560" x="288" y="704" width="32" height="32"/>
+  <object id="1875" gid="560" x="672" y="320" width="32" height="32"/>
+  <object id="1876" gid="560" x="672" y="256" width="32" height="32"/>
+  <object id="1877" gid="560" x="608" y="64" width="32" height="32"/>
+  <object id="1878" gid="560" x="576" y="64" width="32" height="32"/>
+  <object id="1879" gid="560" x="800" y="64" width="32" height="32"/>
+  <object id="1880" gid="560" x="832" y="64" width="32" height="32"/>
+  <object id="1881" gid="560" x="864" y="64" width="32" height="32"/>
+  <object id="1882" gid="560" x="32" y="896" width="32" height="32"/>
+  <object id="1883" gid="560" x="32" y="864" width="32" height="32"/>
+  <object id="1884" gid="560" x="32" y="832" width="32" height="32"/>
+  <object id="1885" gid="550" x="384" y="128" width="32" height="32"/>
+  <object id="1886" gid="550" x="96" y="416" width="32" height="32"/>
+  <object id="1887" gid="515" x="896" y="928" width="32" height="32">
+   <properties>
+    <property name="levelSkip" type="int" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
